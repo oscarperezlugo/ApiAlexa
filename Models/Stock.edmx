@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Stock.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AcumuladoStock">
+          <Key>
+            <PropertyRef Name="CodigoEmpresa" />
+            <PropertyRef Name="Ejercicio" />
+            <PropertyRef Name="CodigoArticulo" />
+            <PropertyRef Name="CodigoAlmacen" />
+            <PropertyRef Name="Periodo" />
+            <PropertyRef Name="Partida" />
+            <PropertyRef Name="TipoUnidadMedida_" />
+            <PropertyRef Name="CodigoColor_" />
+            <PropertyRef Name="CodigoTalla01_" />
+          </Key>
+          <Property Name="CodigoEmpresa" Type="smallint" Nullable="false" />
+          <Property Name="Ejercicio" Type="smallint" Nullable="false" />
+          <Property Name="CodigoArticulo" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="CodigoAlmacen" Type="varchar" MaxLength="4" Nullable="false" />
+          <Property Name="Periodo" Type="smallint" Nullable="false" />
+          <Property Name="Partida" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="TipoUnidadMedida_" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CodigoColor_" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CodigoTalla01_" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="UnidadEntrada" Type="decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="UnidadSalida" Type="decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="UnidadSaldo" Type="decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="UnidadCompra" Type="decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="UnidadConsumo" Type="decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="UnidadEntradaTipo_" Type="decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="UnidadSalidaTipo_" Type="decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="UnidadSaldoTipo_" Type="decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="UnidadCompraTipo_" Type="decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="UnidadConsumoTipo_" Type="decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="ImporteEntrada" Type="decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="CosteSalida" Type="decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="ImporteSaldo" Type="decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="ImporteSalida" Type="decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="ImporteCompra" Type="decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="ImporteConsumo" Type="decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="PrecioMedio" Type="decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="PrecioUltimaEntrada" Type="decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="PrecioUltimaSalida" Type="decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="FechaUltimaEntrada" Type="datetime" />
+          <Property Name="FechaUltimaSalida" Type="datetime" />
+          <Property Name="FechaCaducidad" Type="datetime" />
+          <Property Name="Ubicacion" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="StatusRecalculo" Type="smallint" Nullable="false" />
+          <Property Name="IdAcumuladoStock" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="StockStoreContainer">
+          <EntitySet Name="AcumuladoStock" EntityType="Self.AcumuladoStock" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Stock" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AcumuladoStock">
+          <Key>
+            <PropertyRef Name="CodigoEmpresa" />
+            <PropertyRef Name="Ejercicio" />
+            <PropertyRef Name="CodigoArticulo" />
+            <PropertyRef Name="CodigoAlmacen" />
+            <PropertyRef Name="Periodo" />
+            <PropertyRef Name="Partida" />
+            <PropertyRef Name="TipoUnidadMedida_" />
+            <PropertyRef Name="CodigoColor_" />
+            <PropertyRef Name="CodigoTalla01_" />
+          </Key>
+          <Property Name="CodigoEmpresa" Type="Int16" Nullable="false" />
+          <Property Name="Ejercicio" Type="Int16" Nullable="false" />
+          <Property Name="CodigoArticulo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CodigoAlmacen" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Periodo" Type="Int16" Nullable="false" />
+          <Property Name="Partida" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TipoUnidadMedida_" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CodigoColor_" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CodigoTalla01_" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UnidadEntrada" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="UnidadSalida" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="UnidadSaldo" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="UnidadCompra" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="UnidadConsumo" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="UnidadEntradaTipo_" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="UnidadSalidaTipo_" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="UnidadSaldoTipo_" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="UnidadCompraTipo_" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="UnidadConsumoTipo_" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="ImporteEntrada" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="CosteSalida" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="ImporteSaldo" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="ImporteSalida" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="ImporteCompra" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="ImporteConsumo" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="PrecioMedio" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="PrecioUltimaEntrada" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="PrecioUltimaSalida" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+          <Property Name="FechaUltimaEntrada" Type="DateTime" Precision="3" />
+          <Property Name="FechaUltimaSalida" Type="DateTime" Precision="3" />
+          <Property Name="FechaCaducidad" Type="DateTime" Precision="3" />
+          <Property Name="Ubicacion" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="StatusRecalculo" Type="Int16" Nullable="false" />
+          <Property Name="IdAcumuladoStock" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="REMEXEntities11" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AcumuladoStocks" EntityType="Self.AcumuladoStock" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="StockStoreContainer" CdmEntityContainer="REMEXEntities11">
+          <EntitySetMapping Name="AcumuladoStocks">
+            <EntityTypeMapping TypeName="Stock.AcumuladoStock">
+              <MappingFragment StoreEntitySet="AcumuladoStock">
+                <ScalarProperty Name="CodigoEmpresa" ColumnName="CodigoEmpresa" />
+                <ScalarProperty Name="Ejercicio" ColumnName="Ejercicio" />
+                <ScalarProperty Name="CodigoArticulo" ColumnName="CodigoArticulo" />
+                <ScalarProperty Name="CodigoAlmacen" ColumnName="CodigoAlmacen" />
+                <ScalarProperty Name="Periodo" ColumnName="Periodo" />
+                <ScalarProperty Name="Partida" ColumnName="Partida" />
+                <ScalarProperty Name="TipoUnidadMedida_" ColumnName="TipoUnidadMedida_" />
+                <ScalarProperty Name="CodigoColor_" ColumnName="CodigoColor_" />
+                <ScalarProperty Name="CodigoTalla01_" ColumnName="CodigoTalla01_" />
+                <ScalarProperty Name="UnidadEntrada" ColumnName="UnidadEntrada" />
+                <ScalarProperty Name="UnidadSalida" ColumnName="UnidadSalida" />
+                <ScalarProperty Name="UnidadSaldo" ColumnName="UnidadSaldo" />
+                <ScalarProperty Name="UnidadCompra" ColumnName="UnidadCompra" />
+                <ScalarProperty Name="UnidadConsumo" ColumnName="UnidadConsumo" />
+                <ScalarProperty Name="UnidadEntradaTipo_" ColumnName="UnidadEntradaTipo_" />
+                <ScalarProperty Name="UnidadSalidaTipo_" ColumnName="UnidadSalidaTipo_" />
+                <ScalarProperty Name="UnidadSaldoTipo_" ColumnName="UnidadSaldoTipo_" />
+                <ScalarProperty Name="UnidadCompraTipo_" ColumnName="UnidadCompraTipo_" />
+                <ScalarProperty Name="UnidadConsumoTipo_" ColumnName="UnidadConsumoTipo_" />
+                <ScalarProperty Name="ImporteEntrada" ColumnName="ImporteEntrada" />
+                <ScalarProperty Name="CosteSalida" ColumnName="CosteSalida" />
+                <ScalarProperty Name="ImporteSaldo" ColumnName="ImporteSaldo" />
+                <ScalarProperty Name="ImporteSalida" ColumnName="ImporteSalida" />
+                <ScalarProperty Name="ImporteCompra" ColumnName="ImporteCompra" />
+                <ScalarProperty Name="ImporteConsumo" ColumnName="ImporteConsumo" />
+                <ScalarProperty Name="PrecioMedio" ColumnName="PrecioMedio" />
+                <ScalarProperty Name="PrecioUltimaEntrada" ColumnName="PrecioUltimaEntrada" />
+                <ScalarProperty Name="PrecioUltimaSalida" ColumnName="PrecioUltimaSalida" />
+                <ScalarProperty Name="FechaUltimaEntrada" ColumnName="FechaUltimaEntrada" />
+                <ScalarProperty Name="FechaUltimaSalida" ColumnName="FechaUltimaSalida" />
+                <ScalarProperty Name="FechaCaducidad" ColumnName="FechaCaducidad" />
+                <ScalarProperty Name="Ubicacion" ColumnName="Ubicacion" />
+                <ScalarProperty Name="StatusRecalculo" ColumnName="StatusRecalculo" />
+                <ScalarProperty Name="IdAcumuladoStock" ColumnName="IdAcumuladoStock" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

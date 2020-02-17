@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="REMEXModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CabeceraParteTrabajo">
+          <Key>
+            <PropertyRef Name="CodigoEmpresa" />
+            <PropertyRef Name="EjercicioParteTrabajo" />
+            <PropertyRef Name="SerieParteTrabajo" />
+          </Key>
+          <Property Name="NumeroParteTrabajo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CodigoEmpresa" Type="smallint" Nullable="false" />
+          <Property Name="EjercicioParteTrabajo" Type="int" Nullable="false" />
+          <Property Name="SerieParteTrabajo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="FechaParteTrabajo" Type="datetime" />
+          <Property Name="CodigoProyecto" Type="varchar" MaxLength="50" />
+          <Property Name="AnaCapitulo" Type="varchar" MaxLength="50" />
+          <Property Name="AnaLote" Type="varchar" MaxLength="50" />
+          <Property Name="CodigoEmpleadoLc" Type="varbinary" MaxLength="50" />
+          <Property Name="StatusAnalitica" Type="int" />
+          <Property Name="Comentarios" Type="varchar(max)" />
+          <Property Name="IdTareaLc" Type="int" />
+          <Property Name="NombreTareaLc" Type="varchar" MaxLength="50" />
+          <Property Name="MovAnalitica" Type="int" />
+        </EntityType>
+        <EntityContainer Name="REMEXModelStoreContainer">
+          <EntitySet Name="CabeceraParteTrabajo" EntityType="Self.CabeceraParteTrabajo" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="REMEXModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CabeceraParteTrabajo">
+          <Key>
+            <PropertyRef Name="CodigoEmpresa" />
+            <PropertyRef Name="EjercicioParteTrabajo" />
+            <PropertyRef Name="SerieParteTrabajo" />
+          </Key>
+          <Property Name="NumeroParteTrabajo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CodigoEmpresa" Type="Int16" Nullable="false" />
+          <Property Name="EjercicioParteTrabajo" Type="Int32" Nullable="false" />
+          <Property Name="SerieParteTrabajo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FechaParteTrabajo" Type="DateTime" Precision="3" />
+          <Property Name="CodigoProyecto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AnaCapitulo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AnaLote" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CodigoEmpleadoLc" Type="Binary" MaxLength="50" FixedLength="false" />
+          <Property Name="StatusAnalitica" Type="Int32" />
+          <Property Name="Comentarios" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="IdTareaLc" Type="Int32" />
+          <Property Name="NombreTareaLc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MovAnalitica" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="REMEXEntities8" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CabeceraParteTrabajoes" EntityType="Self.CabeceraParteTrabajo" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="REMEXModelStoreContainer" CdmEntityContainer="REMEXEntities8">
+          <EntitySetMapping Name="CabeceraParteTrabajoes">
+            <EntityTypeMapping TypeName="REMEXModel.CabeceraParteTrabajo">
+              <MappingFragment StoreEntitySet="CabeceraParteTrabajo">
+                <ScalarProperty Name="NumeroParteTrabajo" ColumnName="NumeroParteTrabajo" />
+                <ScalarProperty Name="CodigoEmpresa" ColumnName="CodigoEmpresa" />
+                <ScalarProperty Name="EjercicioParteTrabajo" ColumnName="EjercicioParteTrabajo" />
+                <ScalarProperty Name="SerieParteTrabajo" ColumnName="SerieParteTrabajo" />
+                <ScalarProperty Name="FechaParteTrabajo" ColumnName="FechaParteTrabajo" />
+                <ScalarProperty Name="CodigoProyecto" ColumnName="CodigoProyecto" />
+                <ScalarProperty Name="AnaCapitulo" ColumnName="AnaCapitulo" />
+                <ScalarProperty Name="AnaLote" ColumnName="AnaLote" />
+                <ScalarProperty Name="CodigoEmpleadoLc" ColumnName="CodigoEmpleadoLc" />
+                <ScalarProperty Name="StatusAnalitica" ColumnName="StatusAnalitica" />
+                <ScalarProperty Name="Comentarios" ColumnName="Comentarios" />
+                <ScalarProperty Name="IdTareaLc" ColumnName="IdTareaLc" />
+                <ScalarProperty Name="NombreTareaLc" ColumnName="NombreTareaLc" />
+                <ScalarProperty Name="MovAnalitica" ColumnName="MovAnalitica" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

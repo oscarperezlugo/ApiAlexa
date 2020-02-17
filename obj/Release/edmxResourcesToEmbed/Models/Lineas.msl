@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="REMEXModel2StoreContainer" CdmEntityContainer="REMEXEntities10">
+    <EntitySetMapping Name="LineasParteTrabajoes">
+      <EntityTypeMapping TypeName="REMEXModel2.LineasParteTrabajo">
+        <MappingFragment StoreEntitySet="LineasParteTrabajo">
+          <ScalarProperty Name="CodigoEmpresa" ColumnName="CodigoEmpresa" />
+          <ScalarProperty Name="EjercicioParteTrabajo" ColumnName="EjercicioParteTrabajo" />
+          <ScalarProperty Name="SerieParteTrabajo" ColumnName="SerieParteTrabajo" />
+          <ScalarProperty Name="NumeroParteTrabajo" ColumnName="NumeroParteTrabajo" />
+          <ScalarProperty Name="TipoCodificado" ColumnName="TipoCodificado" />
+          <ScalarProperty Name="LineasPosicion" ColumnName="LineasPosicion" />
+          <ScalarProperty Name="CodigoArticulo" ColumnName="CodigoArticulo" />
+          <ScalarProperty Name="DescripcionArticulo" ColumnName="DescripcionArticulo" />
+          <ScalarProperty Name="DescripcionLinea" ColumnName="DescripcionLinea" />
+          <ScalarProperty Name="Unidades" ColumnName="Unidades" />
+          <ScalarProperty Name="PrecioCoste" ColumnName="PrecioCoste" />
+          <ScalarProperty Name="PrecioVenta" ColumnName="PrecioVenta" />
+          <ScalarProperty Name="CodigoEmpleadoLc" ColumnName="CodigoEmpleadoLc" />
+          <ScalarProperty Name="CodigoProyecto" ColumnName="CodigoProyecto" />
+          <ScalarProperty Name="AnaCapitulo" ColumnName="AnaCapitulo" />
+          <ScalarProperty Name="AnaLote" ColumnName="AnaLote" />
+          <ScalarProperty Name="IdTareaLc" ColumnName="IdTareaLc" />
+          <ScalarProperty Name="CodigoAlmacen" ColumnName="CodigoAlmacen" />
+          <ScalarProperty Name="Partida" ColumnName="Partida" />
+          <ScalarProperty Name="Medida" ColumnName="Medida" />
+          <ScalarProperty Name="LiquidableLc" ColumnName="LiquidableLc" />
+          <ScalarProperty Name="PrecioCosteEditableLc" ColumnName="PrecioCosteEditableLc" />
+          <ScalarProperty Name="SonHorasLc" ColumnName="SonHorasLc" />
+          <ScalarProperty Name="Importe" ColumnName="Importe" />
+          <ScalarProperty Name="ImporteCoste" ColumnName="ImporteCoste" />
+          <ScalarProperty Name="MaximoSinRetencionLc" ColumnName="MaximoSinRetencionLc" />
+          <ScalarProperty Name="ImporteConRetencionLc" ColumnName="ImporteConRetencionLc" />
+          <ScalarProperty Name="CodigoMunicipio" ColumnName="CodigoMunicipio" />
+          <ScalarProperty Name="Municipio" ColumnName="Municipio" />
+          <ScalarProperty Name="TrayectoLc" ColumnName="TrayectoLc" />
+          <ScalarProperty Name="LiquidadoLc" ColumnName="LiquidadoLc" />
+          <ScalarProperty Name="EjercicioLiquidacionLc" ColumnName="EjercicioLiquidacionLc" />
+          <ScalarProperty Name="SerieLiquidacionLc" ColumnName="SerieLiquidacionLc" />
+          <ScalarProperty Name="NumeroLiquidacionLc" ColumnName="NumeroLiquidacionLc" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="TipoArticulo" ColumnName="TipoArticulo" />
+          <ScalarProperty Name="CodigoFamilia" ColumnName="CodigoFamilia" />
+          <ScalarProperty Name="CodigoSubfamilia" ColumnName="CodigoSubfamilia" />
+          <ScalarProperty Name="BloqueoRebaje_" ColumnName="BloqueoRebaje_" />
+          <ScalarProperty Name="CodigoDefinicion_" ColumnName="CodigoDefinicion_" />
+          <ScalarProperty Name="CodigoActividadParteLc" ColumnName="CodigoActividadParteLc" />
+          <ScalarProperty Name="CodigoGastoComercialLc" ColumnName="CodigoGastoComercialLc" />
+          <ScalarProperty Name="Comentarios" ColumnName="Comentarios" />
+          <ScalarProperty Name="IdDelegacionTecnicoLc" ColumnName="IdDelegacionTecnicoLc" />
+          <ScalarProperty Name="CodigoDepartamentoTecnicoLc" ColumnName="CodigoDepartamentoTecnicoLc" />
+          <ScalarProperty Name="NombreTareaLc" ColumnName="NombreTareaLc" />
+          <ScalarProperty Name="TratamientoPartidas" ColumnName="TratamientoPartidas" />
+          <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+          <ScalarProperty Name="UnidadMedida1_" ColumnName="UnidadMedida1_" />
+          <ScalarProperty Name="FactorConversion_" ColumnName="FactorConversion_" />
+          <ScalarProperty Name="Unidades2_" ColumnName="Unidades2_" />
+          <ScalarProperty Name="StatusStock" ColumnName="StatusStock" />
+          <ScalarProperty Name="StatusAnalitica" ColumnName="StatusAnalitica" />
+          <ScalarProperty Name="MovAnalitica" ColumnName="MovAnalitica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

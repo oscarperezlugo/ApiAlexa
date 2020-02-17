@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Stock" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AcumuladoStock">
+    <Key>
+      <PropertyRef Name="CodigoEmpresa" />
+      <PropertyRef Name="Ejercicio" />
+      <PropertyRef Name="CodigoArticulo" />
+      <PropertyRef Name="CodigoAlmacen" />
+      <PropertyRef Name="Periodo" />
+      <PropertyRef Name="Partida" />
+      <PropertyRef Name="TipoUnidadMedida_" />
+      <PropertyRef Name="CodigoColor_" />
+      <PropertyRef Name="CodigoTalla01_" />
+    </Key>
+    <Property Name="CodigoEmpresa" Type="Int16" Nullable="false" />
+    <Property Name="Ejercicio" Type="Int16" Nullable="false" />
+    <Property Name="CodigoArticulo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoAlmacen" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Periodo" Type="Int16" Nullable="false" />
+    <Property Name="Partida" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TipoUnidadMedida_" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoColor_" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoTalla01_" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UnidadEntrada" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="UnidadSalida" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="UnidadSaldo" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="UnidadCompra" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="UnidadConsumo" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="UnidadEntradaTipo_" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="UnidadSalidaTipo_" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="UnidadSaldoTipo_" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="UnidadCompraTipo_" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="UnidadConsumoTipo_" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="ImporteEntrada" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="CosteSalida" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="ImporteSaldo" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="ImporteSalida" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="ImporteCompra" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="ImporteConsumo" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="PrecioMedio" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="PrecioUltimaEntrada" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="PrecioUltimaSalida" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="FechaUltimaEntrada" Type="DateTime" Precision="3" />
+    <Property Name="FechaUltimaSalida" Type="DateTime" Precision="3" />
+    <Property Name="FechaCaducidad" Type="DateTime" Precision="3" />
+    <Property Name="Ubicacion" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="StatusRecalculo" Type="Int16" Nullable="false" />
+    <Property Name="IdAcumuladoStock" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="REMEXEntities11" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AcumuladoStocks" EntityType="Self.AcumuladoStock" />
+  </EntityContainer>
+</Schema>

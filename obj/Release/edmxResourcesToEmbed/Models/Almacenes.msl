@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="REMEXModel3StoreContainer" CdmEntityContainer="REMEXEntities12">
+    <EntitySetMapping Name="Almacenes">
+      <EntityTypeMapping TypeName="REMEXModel3.Almacene">
+        <MappingFragment StoreEntitySet="Almacenes">
+          <ScalarProperty Name="CodigoEmpresa" ColumnName="CodigoEmpresa" />
+          <ScalarProperty Name="CodigoAlmacen" ColumnName="CodigoAlmacen" />
+          <ScalarProperty Name="GrupoAlmacen" ColumnName="GrupoAlmacen" />
+          <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+          <ScalarProperty Name="Almacen" ColumnName="Almacen" />
+          <ScalarProperty Name="Domicilio" ColumnName="Domicilio" />
+          <ScalarProperty Name="CodigoPostal" ColumnName="CodigoPostal" />
+          <ScalarProperty Name="CodigoMunicipio" ColumnName="CodigoMunicipio" />
+          <ScalarProperty Name="Municipio" ColumnName="Municipio" />
+          <ScalarProperty Name="CodigoProvincia" ColumnName="CodigoProvincia" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="AgruparMovimientos" ColumnName="AgruparMovimientos" />
+          <ScalarProperty Name="IdDelegacion" ColumnName="IdDelegacion" />
+          <ScalarProperty Name="IdAlmacen" ColumnName="IdAlmacen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="REMEXModelStoreContainer" CdmEntityContainer="REMEXEntities7">
+    <EntitySetMapping Name="CabeceraParteTrabajoes">
+      <EntityTypeMapping TypeName="REMEXModel.CabeceraParteTrabajo">
+        <MappingFragment StoreEntitySet="CabeceraParteTrabajo">
+          <ScalarProperty Name="CodigoEmpresa" ColumnName="CodigoEmpresa" />
+          <ScalarProperty Name="EjercicioParteTrabajo" ColumnName="EjercicioParteTrabajo" />
+          <ScalarProperty Name="SerieParteTrabajo" ColumnName="SerieParteTrabajo" />
+          <ScalarProperty Name="NumeroParteTrabajo" ColumnName="NumeroParteTrabajo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

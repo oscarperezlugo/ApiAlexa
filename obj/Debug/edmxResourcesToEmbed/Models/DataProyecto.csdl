@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="REMEXModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CabeceraParteTrabajo">
+    <Key>
+      <PropertyRef Name="CodigoEmpresa" />
+      <PropertyRef Name="EjercicioParteTrabajo" />
+      <PropertyRef Name="SerieParteTrabajo" />
+      <PropertyRef Name="NumeroParteTrabajo" />
+    </Key>
+    <Property Name="CodigoEmpresa" Type="Int16" Nullable="false" />
+    <Property Name="EjercicioParteTrabajo" Type="Int32" Nullable="false" />
+    <Property Name="SerieParteTrabajo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NumeroParteTrabajo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FechaParteTrabajo" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CodigoProyecto" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AnaCapitulo" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AnaLote" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoEmpleadoLc" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="StatusAnalitica" Type="Int16" />
+    <Property Name="Comentarios" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IdTareaLc" Type="Guid" />
+    <Property Name="NombreTareaLc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MovAnalitica" Type="Guid" />
+  </EntityType>
+  <EntityContainer Name="REMEXEntities5" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CabeceraParteTrabajoes" EntityType="Self.CabeceraParteTrabajo" />
+  </EntityContainer>
+</Schema>

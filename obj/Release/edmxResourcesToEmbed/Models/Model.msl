@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="REMEXModelStoreContainer" CdmEntityContainer="REMEXEntities8">
+    <EntitySetMapping Name="CabeceraParteTrabajoes">
+      <EntityTypeMapping TypeName="REMEXModel.CabeceraParteTrabajo">
+        <MappingFragment StoreEntitySet="CabeceraParteTrabajo">
+          <ScalarProperty Name="NumeroParteTrabajo" ColumnName="NumeroParteTrabajo" />
+          <ScalarProperty Name="CodigoEmpresa" ColumnName="CodigoEmpresa" />
+          <ScalarProperty Name="EjercicioParteTrabajo" ColumnName="EjercicioParteTrabajo" />
+          <ScalarProperty Name="SerieParteTrabajo" ColumnName="SerieParteTrabajo" />
+          <ScalarProperty Name="FechaParteTrabajo" ColumnName="FechaParteTrabajo" />
+          <ScalarProperty Name="CodigoProyecto" ColumnName="CodigoProyecto" />
+          <ScalarProperty Name="AnaCapitulo" ColumnName="AnaCapitulo" />
+          <ScalarProperty Name="AnaLote" ColumnName="AnaLote" />
+          <ScalarProperty Name="CodigoEmpleadoLc" ColumnName="CodigoEmpleadoLc" />
+          <ScalarProperty Name="StatusAnalitica" ColumnName="StatusAnalitica" />
+          <ScalarProperty Name="Comentarios" ColumnName="Comentarios" />
+          <ScalarProperty Name="IdTareaLc" ColumnName="IdTareaLc" />
+          <ScalarProperty Name="NombreTareaLc" ColumnName="NombreTareaLc" />
+          <ScalarProperty Name="MovAnalitica" ColumnName="MovAnalitica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="REMEXModel2" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="LineasParteTrabajo">
+    <Key>
+      <PropertyRef Name="CodigoEmpresa" />
+      <PropertyRef Name="EjercicioParteTrabajo" />
+      <PropertyRef Name="SerieParteTrabajo" />
+      <PropertyRef Name="NumeroParteTrabajo" />
+      <PropertyRef Name="TipoCodificado" />
+      <PropertyRef Name="LineasPosicion" />
+      <PropertyRef Name="Fecha" />
+    </Key>
+    <Property Name="CodigoEmpresa" Type="Int16" Nullable="false" />
+    <Property Name="EjercicioParteTrabajo" Type="Int32" Nullable="false" />
+    <Property Name="SerieParteTrabajo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NumeroParteTrabajo" Type="Int32" Nullable="false" />
+    <Property Name="TipoCodificado" Type="Int16" Nullable="false" />
+    <Property Name="LineasPosicion" Type="Guid" Nullable="false" />
+    <Property Name="CodigoArticulo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DescripcionArticulo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DescripcionLinea" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Unidades" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="PrecioCoste" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="PrecioVenta" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="CodigoEmpleadoLc" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoProyecto" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AnaCapitulo" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AnaLote" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdTareaLc" Type="Guid" Nullable="false" />
+    <Property Name="CodigoAlmacen" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Partida" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Medida" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LiquidableLc" Type="Int16" Nullable="false" />
+    <Property Name="PrecioCosteEditableLc" Type="Int16" Nullable="false" />
+    <Property Name="SonHorasLc" Type="Int16" Nullable="false" />
+    <Property Name="Importe" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="ImporteCoste" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="MaximoSinRetencionLc" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="ImporteConRetencionLc" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="CodigoMunicipio" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Municipio" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TrayectoLc" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LiquidadoLc" Type="Int16" Nullable="false" />
+    <Property Name="EjercicioLiquidacionLc" Type="Int16" Nullable="false" />
+    <Property Name="SerieLiquidacionLc" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NumeroLiquidacionLc" Type="Int32" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TipoArticulo" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoFamilia" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoSubfamilia" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BloqueoRebaje_" Type="Int16" Nullable="false" />
+    <Property Name="CodigoDefinicion_" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoActividadParteLc" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoGastoComercialLc" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Comentarios" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdDelegacionTecnicoLc" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoDepartamentoTecnicoLc" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NombreTareaLc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TratamientoPartidas" Type="Int16" Nullable="false" />
+    <Property Name="FechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UnidadMedida1_" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FactorConversion_" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="Unidades2_" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="StatusStock" Type="Int16" Nullable="false" />
+    <Property Name="StatusAnalitica" Type="Int16" Nullable="false" />
+    <Property Name="MovAnalitica" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="REMEXEntities10" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="LineasParteTrabajoes" EntityType="Self.LineasParteTrabajo" />
+  </EntityContainer>
+</Schema>

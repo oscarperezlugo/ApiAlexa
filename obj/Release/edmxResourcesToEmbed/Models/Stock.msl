@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="StockStoreContainer" CdmEntityContainer="REMEXEntities11">
+    <EntitySetMapping Name="AcumuladoStocks">
+      <EntityTypeMapping TypeName="Stock.AcumuladoStock">
+        <MappingFragment StoreEntitySet="AcumuladoStock">
+          <ScalarProperty Name="CodigoEmpresa" ColumnName="CodigoEmpresa" />
+          <ScalarProperty Name="Ejercicio" ColumnName="Ejercicio" />
+          <ScalarProperty Name="CodigoArticulo" ColumnName="CodigoArticulo" />
+          <ScalarProperty Name="CodigoAlmacen" ColumnName="CodigoAlmacen" />
+          <ScalarProperty Name="Periodo" ColumnName="Periodo" />
+          <ScalarProperty Name="Partida" ColumnName="Partida" />
+          <ScalarProperty Name="TipoUnidadMedida_" ColumnName="TipoUnidadMedida_" />
+          <ScalarProperty Name="CodigoColor_" ColumnName="CodigoColor_" />
+          <ScalarProperty Name="CodigoTalla01_" ColumnName="CodigoTalla01_" />
+          <ScalarProperty Name="UnidadEntrada" ColumnName="UnidadEntrada" />
+          <ScalarProperty Name="UnidadSalida" ColumnName="UnidadSalida" />
+          <ScalarProperty Name="UnidadSaldo" ColumnName="UnidadSaldo" />
+          <ScalarProperty Name="UnidadCompra" ColumnName="UnidadCompra" />
+          <ScalarProperty Name="UnidadConsumo" ColumnName="UnidadConsumo" />
+          <ScalarProperty Name="UnidadEntradaTipo_" ColumnName="UnidadEntradaTipo_" />
+          <ScalarProperty Name="UnidadSalidaTipo_" ColumnName="UnidadSalidaTipo_" />
+          <ScalarProperty Name="UnidadSaldoTipo_" ColumnName="UnidadSaldoTipo_" />
+          <ScalarProperty Name="UnidadCompraTipo_" ColumnName="UnidadCompraTipo_" />
+          <ScalarProperty Name="UnidadConsumoTipo_" ColumnName="UnidadConsumoTipo_" />
+          <ScalarProperty Name="ImporteEntrada" ColumnName="ImporteEntrada" />
+          <ScalarProperty Name="CosteSalida" ColumnName="CosteSalida" />
+          <ScalarProperty Name="ImporteSaldo" ColumnName="ImporteSaldo" />
+          <ScalarProperty Name="ImporteSalida" ColumnName="ImporteSalida" />
+          <ScalarProperty Name="ImporteCompra" ColumnName="ImporteCompra" />
+          <ScalarProperty Name="ImporteConsumo" ColumnName="ImporteConsumo" />
+          <ScalarProperty Name="PrecioMedio" ColumnName="PrecioMedio" />
+          <ScalarProperty Name="PrecioUltimaEntrada" ColumnName="PrecioUltimaEntrada" />
+          <ScalarProperty Name="PrecioUltimaSalida" ColumnName="PrecioUltimaSalida" />
+          <ScalarProperty Name="FechaUltimaEntrada" ColumnName="FechaUltimaEntrada" />
+          <ScalarProperty Name="FechaUltimaSalida" ColumnName="FechaUltimaSalida" />
+          <ScalarProperty Name="FechaCaducidad" ColumnName="FechaCaducidad" />
+          <ScalarProperty Name="Ubicacion" ColumnName="Ubicacion" />
+          <ScalarProperty Name="StatusRecalculo" ColumnName="StatusRecalculo" />
+          <ScalarProperty Name="IdAcumuladoStock" ColumnName="IdAcumuladoStock" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

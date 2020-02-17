@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="REMEXModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Articulo">
+    <Key>
+      <PropertyRef Name="CodigoEmpresa" />
+      <PropertyRef Name="CodigoArticulo" />
+    </Key>
+    <Property Name="CodigoEmpresa" Type="Int16" Nullable="false" />
+    <Property Name="CodigoArticulo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DescripcionArticulo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripcion2Articulo" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DescripcionLinea" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ComentarioArticulo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="MarcaProducto" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoAlternativo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoAlternativo2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoArticuloOferta" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoArancelario" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoProveedor" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ReferenciaEdi_" Type="String" MaxLength="35" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PublicarInternet" Type="Int16" Nullable="false" />
+    <Property Name="TipoArticulo" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Utilizado" Type="Int16" Nullable="false" />
+    <Property Name="FechaAlta" Type="DateTime" Precision="3" />
+    <Property Name="FechaInicioOferta" Type="DateTime" Precision="3" />
+    <Property Name="FechaFinalOferta" Type="DateTime" Precision="3" />
+    <Property Name="Temporada" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TipoEnvase_" Type="Int32" Nullable="false" />
+    <Property Name="UnidadMedida2_" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UnidadMedidaAlternativa_" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FactorConversion_" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="CodigoFamilia" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoSubfamilia" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoDivisa" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoProyecto" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoSeccion" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoDepartamento" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoDefinicion_" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ValoracionStock" Type="Byte" Nullable="false" />
+    <Property Name="TratamientoPartidas" Type="Int16" Nullable="false" />
+    <Property Name="ContadorPartida" Type="Int32" Nullable="false" />
+    <Property Name="Colores_" Type="Int16" Nullable="false" />
+    <Property Name="GrupoTalla_" Type="Int16" Nullable="false" />
+    <Property Name="AcumulaEstadistica_" Type="Int16" Nullable="false" />
+    <Property Name="GeneraCompraAutomatica_" Type="Int16" Nullable="false" />
+    <Property Name="IvaIncluido" Type="Int16" Nullable="false" />
+    <Property Name="BloqueoCompra" Type="Int16" Nullable="false" />
+    <Property Name="BloqueoPedidoCompra" Type="Int16" Nullable="false" />
+    <Property Name="BloqueoAlbaranVenta" Type="Int16" Nullable="false" />
+    <Property Name="BloqueoPedidoVenta" Type="Int16" Nullable="false" />
+    <Property Name="UnidadesMinimasOferta" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="UnidadesRegaloOferta" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="StockMinimo" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="StockMaximo" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="PuntoPedido" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="LotePedido" Type="Int32" Nullable="false" />
+    <Property Name="GrupoIva" Type="Byte" Nullable="false" />
+    <Property Name="GrupoIvaCompras" Type="Byte" Nullable="false" />
+    <Property Name="PrecioCompra" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="PrecioVenta" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="C_Margen" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="CosteFabricacionUnitario" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="PrecioCosteEstandar" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="PrecioVentaconIVA1" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="PrecioVentaconIVA2" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="PrecioVentaconIVA3" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="PrecioVentasinIVA1" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="PrecioVentasinIVA2" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="PrecioVentasinIVA3" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="PrecioOfertaconIVA" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="PrecioOfertasinIVA" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="C_Descuento" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="C_Descuento2" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="C_Descuento3" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="C_DescuentoCompras" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="C_DescuentoCompras2" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="C_DescuentoCompras3" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="DescuentoOferta" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="AplicarDescuentos" Type="Int16" Nullable="false" />
+    <Property Name="CodigoComisionista" Type="Int32" Nullable="false" />
+    <Property Name="CodigoComisionista2_" Type="Int32" Nullable="false" />
+    <Property Name="CodigoComisionista3_" Type="Int32" Nullable="false" />
+    <Property Name="CodigoComisionista4_" Type="Int32" Nullable="false" />
+    <Property Name="C_Comision" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="C_Comision2_" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="C_Comision3_" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="C_Comision4_" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="PesoBrutoUnitario_" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="PesoNetoUnitario_" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="VolumenUnitario_" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="FormulaLote" Type="Int16" Nullable="false" />
+    <Property Name="Lote_" Type="Int16" Nullable="false" />
+    <Property Name="Formula" Type="Int16" Nullable="false" />
+    <Property Name="LoteFabricacion" Type="Int32" Nullable="false" />
+    <Property Name="NivelCompuesto" Type="Int16" Nullable="false" />
+    <Property Name="TipoDemanda" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GenerarPlanProd" Type="Int16" Nullable="false" />
+    <Property Name="UsarStockSeg" Type="Int16" Nullable="false" />
+    <Property Name="C_StockSeguridad" Type="Int16" Nullable="false" />
+    <Property Name="DemandaMediaDiaria" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="FactorCrecimiento" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="PeriodosPromediar" Type="Int16" Nullable="false" />
+    <Property Name="TasaProduccionDiaria" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="TiempoMedioReposicion" Type="Decimal" Precision="28" Scale="19" Nullable="false" />
+    <Property Name="NumDecimalesUnidades" Type="Int16" Nullable="false" />
+    <Property Name="PeriodoVida" Type="Int16" Nullable="false" />
+    <Property Name="TipoABC" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoCategoriaLc" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoSubcategoriaLc" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoClaseArticuloLc" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoTipoArticuloLc" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoSubtipoArticuloLc" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoGrupoArticuloLc" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoSubgrupoArticuloLc" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoModoLc" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoFabricanteLc" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoFamiliaFabricanteLc" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoConjuntoLc" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoSubconjuntoLc" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MaximoSinRetencionLc" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="TrataNumerosSerieLc" Type="Int16" Nullable="false" />
+    <Property Name="SonHorasLc" Type="Int16" Nullable="false" />
+    <Property Name="ArticuloNoCodificadoLc" Type="Int16" Nullable="false" />
+    <Property Name="PrecioCosteEditableLc" Type="Int16" Nullable="false" />
+    <Property Name="CodigoTipoPeriodicidadPrecioLc" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LiquidableLc" Type="Int16" Nullable="false" />
+    <Property Name="CodigoTipoCoberturaLc" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ObsoletoLc" Type="Int16" Nullable="false" />
+    <Property Name="CodigoAreaCompetenciaLc" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ImagenExt" Type="Guid" Nullable="false" />
+    <Property Name="GestionCompras" Type="Int16" Nullable="false" />
+    <Property Name="UnidadMedidaCompras_" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UnidadMedidaVentas_" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UnidadMedidaFabricacion_" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoSerie" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UnidadMedidaSerie" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FactorPrecioCompra_" Type="Int32" Nullable="false" />
+    <Property Name="FactorPrecioVenta_" Type="Int32" Nullable="false" />
+    <Property Name="TipoUnidadCalculo_" Type="Byte" Nullable="false" />
+    <Property Name="Medida" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TipoArticuloPresupuesto" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TipoCodificado" Type="Int16" Nullable="false" />
+    <Property Name="CodigoPeriodicidadPrecio" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CobrarDevolucionTardia" Type="Int16" Nullable="false" />
+    <Property Name="CobrarEntregaAdelantada" Type="Int16" Nullable="false" />
+    <Property Name="DevolverDevolucionAdelantada" Type="Int16" Nullable="false" />
+    <Property Name="DevolverEntregaTardia" Type="Int16" Nullable="false" />
+    <Property Name="CodigoArticuloFacturacion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PrecioPeriodoRetraso" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="PrecioUnidadPerdida" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="PartirPeriodos" Type="Int16" Nullable="false" />
+    <Property Name="TipoArticuloAlquiler" Type="Int16" Nullable="false" />
+    <Property Name="NoTraspasarSFA" Type="Int16" Nullable="false" />
+    <Property Name="CodigoContaje" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PrecioPorTramos" Type="Int16" Nullable="false" />
+    <Property Name="Suplido" Type="Int16" Nullable="false" />
+    <Property Name="CodigoNacionOrigen" Type="Int16" Nullable="false" />
+    <Property Name="TipoCodigoBarrasSR" Type="Int16" Nullable="false" />
+    <Property Name="PesableSR" Type="Int16" Nullable="false" />
+    <Property Name="ImagenTactilSR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TaraUnitaria_" Type="Decimal" Precision="28" Scale="10" Nullable="false" />
+    <Property Name="PrecioModificableSR" Type="Int16" Nullable="false" />
+    <Property Name="NoAgruparSR" Type="Int16" Nullable="false" />
+    <Property Name="EnviaraSR" Type="Int16" Nullable="false" />
+    <Property Name="ImpresionResguardoSR" Type="Int16" Nullable="false" />
+    <Property Name="PeriodoGarantiaSR" Type="Int16" Nullable="false" />
+    <Property Name="NovedadesWeb" Type="Int16" Nullable="false" />
+    <Property Name="IdArticulo" Type="Guid" Nullable="false" />
+    <Property Name="PublicarGCRM" Type="Int16" Nullable="false" />
+    <Property Name="MesesGarantiaVenta" Type="Int16" Nullable="false" />
+    <Property Name="MesesGarantiaCompra" Type="Int16" Nullable="false" />
+    <Property Name="MesesGarantiaReparacion" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="REMEXEntities9" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Articulos" EntityType="Self.Articulo" />
+  </EntityContainer>
+</Schema>
